@@ -3,14 +3,18 @@
 Some simple Nextflow workflows that illustrate common patterns. These are
 intended to be used as templates for more useful workflows.
 
-## Nextflow
+## About Nextflow
 
-See https://nextflow.io for installation instructions.
+Nextflow provides a language and tools to construct pipelines, composed of
+arbitrary programs and commands, and run them in various environments. See
+https://nextflow.io for more information and installation instructions.
 
-## Char Counts
+## Skeletons
 
-This workflow, defined in `char_counts.nf`, counts the characters in its input
-files in parallel and then sums all of the counts at the end.
+**char_count/**
+
+This workflow counts the characters in its input files in parallel and then sums
+all of the counts at the end to produce a single value.
 
 To generate test data:
 

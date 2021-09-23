@@ -1,8 +1,9 @@
 secrets.sh
-fixtures/**/*.txt
+**/data/*.txt
 
 # Nextflow
 
 .nextflow.log*
 .nextflow/
 work/
+
