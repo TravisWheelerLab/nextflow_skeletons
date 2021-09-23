@@ -3,6 +3,10 @@
 Some simple Nextflow workflows that illustrate common patterns. These are
 intended to be used as templates for more useful workflows.
 
+## Nextflow
+
+See https://nextflow.io for installation instructions.
+
 ## Char Counts
 
 This workflow, defined in `char_counts.nf`, counts the characters in its input
