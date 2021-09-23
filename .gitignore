@@ -1,0 +1,8 @@
+secrets.sh
+fixtures/**/*.txt
+
+# Nextflow
+
+.nextflow.log*
+.nextflow/
+work/

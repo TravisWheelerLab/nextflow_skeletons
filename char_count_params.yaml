@@ -1,0 +1,1 @@
+target_files: ${projectDir}/fixtures/char_counts/*.txt
