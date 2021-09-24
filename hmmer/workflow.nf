@@ -2,7 +2,7 @@
 
 target_files = Channel.fromPath( params.target_files )
 
-process count_letters {
+process count_residues {
     input:
     path target_file from target_files
 

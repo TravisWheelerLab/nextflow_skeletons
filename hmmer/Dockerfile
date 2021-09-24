@@ -4,13 +4,11 @@ RUN apt-get update && \
         build-essential \
         python3 && \
     rm -rf /var/lib/apt/lists/*
-
-ADD https://github.com/EddyRivasLab/hmmer/archive/refs/tags/hmmer-3.3.2.tar.gz .
+ADD http://eddylab.org/software/hmmer/hmmer-3.3.2.tar.gz .
 RUN tar zxf hmmer-3.3.2.tar.gz
 
 WORKDIR hmmer-3.3.2
-RUN autoconf && \
-    ./configure --prefix /usr/local && \
+RUN ./configure --prefix /usr/local && \
     make && \
     make install
 
