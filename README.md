@@ -41,6 +41,25 @@ Run a workflow using the `nextflow run` command:
 nextflow run workflow.nf -params-file params.yaml -profile local
 ```
 
+### AWS Batch
+
+It is possible to run a workflow in AWS using the Batch service. Creating the
+necessary resources within your AWS account to allow this requires a few steps
+that are described elsewhere. However, once this is done, there are just two
+steps required to run any of the workflows in this repo in AWS:
+
+  1. Configure AWS credentials using environment variables
+  2. Pass the `-profile aws_batch` flag to `nextflow run`
+
+The following environment variables are required:
+
+  * `AWS_ACCESS_KEY_ID`
+  * `AWS_SECRET_ACCESS_KEY`
+  * `AWS_DEFAULT_REGION`
+
+The last can usually be set to `us-east-1`. The others can be found in your AWS
+user settings.
+
 ## Skeletons
 
 **char_count/** - count characters in files and sum the counts. This is a good
