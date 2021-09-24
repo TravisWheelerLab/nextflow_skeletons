@@ -1,15 +1,19 @@
 # esl-seqstat
-
 This workflow counts the residues in the fasta files in data/*fa.
-Sums all of the counts at the end to produce a single value.
+Sums the counts at the end to produce a single value.
 
-To generate test data run init.sh with the number of sequences you'd like to generate.
-(requires easel installed on system)
+To generate test data run ```data/init.sh``` with the number of sequences you'd like to generate.
+### easel installed locally
 ```
 cd data
 bash init.sh 1000
 ```
-
+### with docker
+```
+docker pull tcolligan4/hmmer_ncbi_codeathon
+cd data
+docker run --workdir /data --mount type=bind,src=$PWD,dst=/data tcolligan4/hmmer_ncbi_codeathon bash init.sh 1000
+```
 This will create a number of dummy fasta files that the `nextflow` command below will
 process.
 
