@@ -13,6 +13,17 @@ One of the major advantages of Nextflow (and other, similar systems) is that a
 workflow can generally run in a variety of environments, such as AWS or a
 cluster, with very little modification.
 
+### Using the Edge Release
+
+If you run into a bug or missing feature, you might try the "edge" release,
+which is updated more frequently than the default "stable" release. To update,
+run the following:
+
+```
+export NXF_EDGE=1
+nextflow self-update
+```
+
 ## Anatomy of a Workflow
 
 Each workflow consists of several common files. These are described below.
